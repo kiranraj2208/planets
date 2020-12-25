@@ -1,3 +1,4 @@
+import { Container } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -8,7 +9,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import FavoriteList from '../FavoriteList/FavoriteList';
 import List from '../List/List';
-import {Container} from '@material-ui/core'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -59,9 +59,6 @@ export default function PlanetsTab(props) {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
 
   return (
     <div className={classes.root}>
